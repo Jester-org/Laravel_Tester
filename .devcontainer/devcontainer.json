@@ -1,0 +1,20 @@
+{
+    "name": "Laravel Dev",
+    "image": "php:8.2-alpine",
+    "features": {},
+    "postCreateCommand": "apk add --no-cache php82-pdo_sqlite composer && composer install && cp .env.example .env && php artisan key:generate && touch database/database.sqlite && php artisan migrate --seed",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "xdebug.php-debug",
+                "bmewburn.vscode-intelephense-client"
+            ]
+        }
+    },
+    "portsAttributes": {
+        "8000": {
+            "label": "Laravel Development Server",
+            "onAutoForward": "openPreview"
+        }
+    }
+}

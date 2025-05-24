@@ -11,7 +11,7 @@
         <i class="fas fa-envelope"></i>
         <i class="fas fa-cog"></i>
         <i class="fas fa-user"></i>
-        <a title="sign out" href="/userLogout"><i class="fas fa-sign-out-alt d-block"></i></a>
+        <a title="sign out" href="/logout"><i class="fas fa-sign-out-alt d-block"></i></a>
     </div>
 </header>
 
